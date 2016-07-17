@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.installment.dao.IUserDao">
+  <insert id="add" parameterType="com.installment.entity.User">
+  </insert>
+  <update id="update" parameterType="User">
+    update users set username=#{username}, password=#{password}, email=#{email}, phone=#{phone},
+    province=#{province}, city=#{city}, street=#{street}, detail=#{detail}
+  </update>
+  <delete id="delete" parameterType="Integer">
+    delete from users where userID = #{userID}
+  </delete>
+  <select id="findByID" parameterType="Integer" resultType="User">
+    select * from users where userID = #{userID}
+  </select>
+  <resultMap type="User" id="UserMap" >
+  	<id column="userID" property="userID" />
+  	<result column="username" property="username" />
+  	<result column="password" property="password" />
+  	<result column="phone" property="phone" />
+  	<result column="email" property="email" />
+  	<result column="province" property="province" />
+  	<result column="city" property="city" />
+  	<result column="street" property="street" />
+  	<result column="detail" property="detail" />
+  </resultMap>
+  
+  <select id="findAll" resultMap="UserMap">
+    select * from users
+  </select>
+</mapper>
