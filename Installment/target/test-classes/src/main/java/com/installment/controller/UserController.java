@@ -2,6 +2,10 @@
 
 import java.util.List;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -29,13 +33,17 @@ public class UserController {
 	}
 	
 	@RequestMapping(value = "/login", method=RequestMethod.POST)
-	public String login(User user, Model model) {
-		user = userService.checkLogin(user.getUsername(), user.getPassword());
+	public ModelAndView login(HttpServletRequest request,
+            HttpServletResponse response) {
+		User user = userService.checkLogin(request.getParameter("username"), request.getParameter("password"));
+		ModelAndView mv = new ModelAndView();
+		HttpSession session = request.getSession();
 		if(user != null) {
-			model.addAttribute(user);
-			
+			session.setAttribute("userID", user.getuserID());
+			session.setAttribute("username", user.getUsername());
 		}
-		return "mainpage";
+		mv.setViewName("mainpage");
+		return mv;
 	}
 	
 	@RequestMapping(value = "/mainpage")
