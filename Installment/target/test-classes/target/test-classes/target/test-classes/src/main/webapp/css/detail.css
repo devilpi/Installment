@@ -1,0 +1,59 @@
+.detail {
+    margin-top: 30px;
+}
+
+.detail > div {
+    display: inline-block;
+    vertical-align: top;
+}
+
+div.info {
+    padding-left: 30px;
+}
+
+div.info h1 {
+    font-size: 200%;
+    font-weight: bold;
+}
+
+div.info p, div.info select, div.info input, div.info label, div.info span {
+    font-size: 140%;
+}
+
+div.info h1, div.info p, div.info div {
+    padding-bottom: 20px;
+}
+
+div.info input {
+    width: 50px;
+}
+
+div.info button {
+    background-color: #ee1d24;
+    color: white;
+    font-weight: bold;
+}
+
+div.info button:hover {
+    background-color: darkred;
+    color: whitesmoke;
+}
+
+span.complement {
+    padding-left: 20px;
+    font-size: 90%;
+}
+
+div.description {
+    margin-top: 30px;
+    background-color: white;
+}
+
+div.description ul {
+    font-size: 120%;
+}
+
+div.description li a {
+    display: inline-block;
+    background-color: #ededed;
+}

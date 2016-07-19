@@ -1,0 +1,123 @@
+#panel {
+            display: table;
+            padding-top: 20px;
+            background-color: #ededed;
+            height: 400px;
+            padding-left: 30px;
+            padding-right: 30px;
+            width: 100%;
+        }
+        #panel-row {
+            display: table-row;
+        }
+        #left-record {
+            display: table-cell;
+            padding-left: 10px;
+            width: 130px;
+        }
+        #right-info {
+            display: table-cell;
+            padding-left: 20px;
+        }
+        #basic-info {
+            height: 160px;
+            background-color: white;
+            border-bottom-left-radius: 80px;
+            border-top-left-radius: 80px;
+        }
+        #basic-info > div:first-child {
+            height: 160px;
+            width: 300px;
+            float: left;
+            border-right: dashed 1px lightgrey;
+            padding-top: 30px;
+            padding-left: 20px;
+        }
+        #basic-info > div:last-child {
+            height: 160px;
+            background-color: white;
+            float: left;
+        }
+        #user-photo {
+            float: left;
+            margin-right: 10px;
+        }
+        #username {
+            display: inline-block;
+            font-size: 180%;
+            color: black;
+            margin-bottom: 5px;
+        }
+        #vip {
+
+            color: white;
+            padding: 2px;
+            border-radius: 2px;
+            background-color: orange;
+        }
+        #id-info a {
+            display: inline-block;
+            color: dodgerblue;
+            font-size: 120%;
+            margin: 4px;
+        }
+        #id-info {
+            margin-left: 5px;
+            padding: 5px;
+            float: left;
+        }
+        #basic-info table {
+            float: left;
+        }
+        #basic-info table tr td {
+            display: inline-block;
+            padding: 13px 25px;
+        }
+        dl.money{
+            padding: 10px 30px;
+            height: 110px;
+        }
+        dl.money:first-child {
+            float: left;
+            border-right: dashed 1px grey;
+        }
+        dl.money:last-child {
+            float: left;
+        }
+        dl.money dd {
+            line-height: 200%;
+        }
+        #money {
+            background-color: #ededed;
+            float: left;
+            padding: 10px;
+            margin-top: 13px;
+            margin-left: 20px;
+        }
+        #order {
+           padding: 20px;
+            background-color: white;
+            margin-top: 20px;
+            min-height: 180px;
+        }
+        .title {
+            font-size: 150%;
+            font-weight: bold;
+            float: left;
+            margin-left: 30px;
+        }
+        #tip {
+            vertical-align: middle;
+            font-weight: bold;
+            position: relative;
+            top: 30px;
+            left: 70px;
+        }
+        #query {
+            float: right;
+            margin-right: 40px;
+        }
+        #cart-image {
+            color: rgba(0, 0, 0, 0.2);
+            font-size: 300%;
+        }

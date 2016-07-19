@@ -33,8 +33,9 @@ public class UserController {
 		user = userService.checkLogin(user.getUsername(), user.getPassword());
 		if(user != null) {
 			model.addAttribute(user);
-			return "pageStudentPage";
-		} else return "mainpage";
+			
+		}
+		return "mainpage";
 	}
 	
 	@RequestMapping(value = "/mainpage")

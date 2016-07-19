@@ -1,0 +1,60 @@
+.container {
+    margin-top: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    min-width: 768px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+div.toprow {
+    background-color: #ededed;
+    padding: 5px 0;
+}
+
+div.toprow span {
+    padding-right: 20px;
+}
+
+div.logo {
+    text-align: center;
+    padding: 20px 0;
+}
+
+div.logo form {
+    text-align: left;
+}
+
+div.logo form input#search {
+    border: 2px #ee1d24 solid;
+}
+
+div.logo form button {
+    background-color: #ee1d24;
+    color: white;
+}
+
+div.logo form button:hover {
+    background-color: #ee1d24;
+    color: white;
+}
+
+ul#navbar a {
+    border-radius: 0;
+}
+
+.red {
+    color: #ee1d24;
+}
+
+.active {
+    color: #ee1d24;
+}
+
+.fb {
+    font-size: 120%;
+    font-weight: bold;
+}
