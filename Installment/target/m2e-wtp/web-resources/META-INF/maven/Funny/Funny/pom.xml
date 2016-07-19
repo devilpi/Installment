@@ -148,6 +148,13 @@
 		<artifactId>commons-dbcp</artifactId>
 		<version>1.2.2</version>
 	</dependency>
+	<dependency> 
+        <groupId>commons-pool</groupId> 
+        <artifactId>commons-pool</artifactId> 
+        <version>20030825.183949</version> 
+        <type>jar</type> 
+        <scope>compile</scope> 
+    </dependency>
 	<!-- JSTL标签类 -->
 	<dependency>
 		<groupId>jstl</groupId>
@@ -193,5 +200,18 @@
   </dependencies>
   <build>
     <finalName>Installment</finalName>
+    <testResources>
+    	<testResource>
+    		<directory></directory>
+    	</testResource>
+    </testResources>
+    <resources>
+    <resource>
+    	<directory>src/main/java</directory>
+             <includes>
+                  <include>**/*.xml</include>
+             </includes>
+        </resource>
+    </resources>
   </build>
 </project>
