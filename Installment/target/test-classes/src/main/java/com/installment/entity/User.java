@@ -5,17 +5,26 @@ public class User {
 	private String username;
 	private String password;
 	private String email;
+	private String phone;
+	
 	
 	private String province;
 	private String city;
 	private String street;
 	private String detail;
-	
-	
+
 	public String getProvince() {
 		return this.province;
 	}
+	
+	public String getPhone() {
+		return phone;
+	}
 
+	public void setPhone(String phone) {
+		this.phone = phone;
+	}
+	
 	public void setProvince(String province) {
 		this.province = province;
 	}
@@ -68,11 +77,14 @@ public class User {
 	public void setEmail(String email) {
 		this.email = email;
 	}
+
 	@Override
 	public String toString() {
 		return "User [userID=" + userID + ", username=" + username + ", password=" + password + ", email=" + email
-				+ ", province=" + province + ", city=" + city + ", street=" + street + ", detail=" + detail + "]";
+				+ ", phone=" + phone + ", province=" + province + ", city=" + city + ", street=" + street + ", detail="
+				+ detail + "]";
 	}
+	
 	
 	
 }

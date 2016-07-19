@@ -41,6 +41,11 @@ public class UserServiceImpl implements IUserService {
 	}
 	
 	@Transactional(propagation = Propagation.SUPPORTS, readOnly=true)
+	public User findByName(String username) {
+		return userDao.findByName(username);
+	}
+	
+	@Transactional(propagation = Propagation.SUPPORTS, readOnly=true)
 	public User checkLogin(String username, String password) {
 		User user = userDao.findByName(username);
 		if(user != null && user.getPassword().equals(password)) {

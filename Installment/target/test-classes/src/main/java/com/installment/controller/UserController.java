@@ -46,6 +46,31 @@ public class UserController {
 		return mv;
 	}
 	
+	@RequestMapping(value = "/logout")
+	public String logout(HttpServletRequest request,
+            HttpServletResponse response) {
+		HttpSession session = request.getSession();
+		session.setAttribute("userID", null);
+		session.setAttribute("username", null);
+		return "mainpage";
+	}
+	
+	@RequestMapping(value = "/register", method=RequestMethod.POST)
+	public String register(HttpServletRequest request,
+            HttpServletResponse response) {
+		User user = new User();
+		user.setUsername(request.getParameter("username"));
+		user.setPassword(request.getParameter("password"));
+		user.setPhone(request.getParameter("phone"));
+		userService.add(user);
+		user = userService.findByName(user.getUsername());
+		
+		HttpSession session = request.getSession();
+		session.setAttribute("userID", user.getuserID());
+		session.setAttribute("username", user.getUsername());
+		return "mainpage";
+	}
+	
 	@RequestMapping(value = "/mainpage")
 	public String jmpToMainpage() {
 		return "mainpage";

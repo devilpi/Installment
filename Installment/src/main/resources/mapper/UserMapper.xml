@@ -2,6 +2,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.installment.dao.IUserDao">
   <insert id="add" parameterType="User">
+  	insert into users(username, password, phone) values (#{username}, #{password}, #{phone})
   </insert>
   <update id="update" parameterType="User">
     update users set username=#{username}, password=#{password}, email=#{email}, phone=#{phone},
