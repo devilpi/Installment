@@ -71,6 +71,23 @@ public class UserController {
 		return "mainpage";
 	}
 	
+	@RequestMapping(value = "/modify", method=RequestMethod.POST)
+	public String modify(HttpServletRequest request,
+            HttpServletResponse response) {
+		String username = (String)request.getSession().getAttribute("username");
+		
+		User user = userService.findByName(username);
+		user.setPhone(request.getParameter("phone"));
+		user.setEmail(request.getParameter("email"));
+		user.setProvince(request.getParameter("province"));
+		user.setCity(request.getParameter("city"));
+		user.setStreet(request.getParameter("street"));
+		user.setDetail(request.getParameter("detail"));
+		userService.update(user);
+		
+		return "pageStudentPage";
+	}
+	
 	@RequestMapping(value = "/mainpage")
 	public String jmpToMainpage() {
 		return "mainpage";
@@ -91,5 +108,8 @@ public class UserController {
 		return "pageStudentPage";
 	}
 	
-	
+	@RequestMapping(value = "/pageModifyInfo")
+	public String jmpToModify() {
+		return "pageModifyInfo";
+	}
 }

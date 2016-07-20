@@ -5,8 +5,8 @@
   	insert into users(username, password, phone) values (#{username}, #{password}, #{phone})
   </insert>
   <update id="update" parameterType="User">
-    update users set username=#{username}, password=#{password}, email=#{email}, phone=#{phone},
-    province=#{province}, city=#{city}, street=#{street}, detail=#{detail}
+    update users set email=#{email}, phone=#{phone}, province=#{province}, 
+    city=#{city}, street=#{street}, detail=#{detail} where username=#{username}
   </update>
   <delete id="delete" parameterType="Integer">
     delete from users where userID = #{userID}

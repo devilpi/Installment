@@ -1,4 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
+    import="javax.servlet.*,javax.servlet.http.*"
 	pageEncoding="UTF-8"
 %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
@@ -22,6 +23,7 @@
     
 </head>
 <body>
+
 <div class="container">
     <jsp:include page="header.inc.jsp"></jsp:include>
     <div id="panel">
@@ -57,10 +59,10 @@
                     <div>
                         <img id="user-photo" src="../images/01010.jpg" style="border-radius: 50%; width: 100px; height: 100px">
                         <p id="id-info">
-                            <span id="username">kadhnn</span><br>
+                            <span id="username">${username}</span><br>
                             <a href="#"><span id="vip" class="glyphicon glyphicon-user"></span> 注册会员</a><br>
                             <a href="#">账户安全：中 &nbsp;提升</a><br>
-                            <a href="#">实名认证：未认证</a>
+                            <a href="${ctx}/user/pageModifyInfo">完善信息</a>
                         </p>
                     </div>
                     <div>

@@ -1,7 +1,6 @@
 package com.installment.dao;
 
 import java.util.List;
-
 import org.springframework.stereotype.Repository;
 
 import com.installment.entity.User;

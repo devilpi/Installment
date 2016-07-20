@@ -1,17 +1,31 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
+    import="javax.servlet.*,javax.servlet.http.*"
 	pageEncoding="UTF-8"
 %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <c:set var="ctx" value="${pageContext.request.contextPath}"></c:set>
-
 
     <div class="row toprow">
         <div class="col-md-6">
         </div>
         <div class="col-md-6">
             <div class="list-inline pull-right">
+            <%
+            
+            	String username = (String)session.getAttribute("username");
+            	if(username == null) {
+            %>
                 <span><a href="${ctx}/user/pageLogIn" class="red fb">登录</a></span>
                 <span><a href="${ctx}/user/pageRegister" class="red fb">注册</a></span>
+            <%
+            	}
+            	else {
+            %>
+            	<span class="red">欢迎你，<a href="${ctx}/user/pageStudentPage" class="red fb"><% out.print(username); %></a></span>
+            	<span><a href="${ctx}/user/logout" class="red fb">退出</a></span>
+            <%
+            	}
+            %>
                 <span><a href="#" class="red fb">购物车</a></span>
                 <span><a href="#" class="red fb">我的订单</a></span>
             </div>

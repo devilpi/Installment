@@ -5,13 +5,13 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <c:set var="ctx" value="${pageContext.request.contextPath}"></c:set>
 
-
     <div class="row toprow">
         <div class="col-md-6">
         </div>
         <div class="col-md-6">
             <div class="list-inline pull-right">
             <%
+            
             	String username = (String)session.getAttribute("username");
             	if(username == null) {
             %>

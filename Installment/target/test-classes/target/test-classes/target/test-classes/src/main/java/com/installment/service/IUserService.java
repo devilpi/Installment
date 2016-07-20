@@ -18,5 +18,7 @@ public interface IUserService {
 	
 	public List<User> findAll();
 	
+	public User findByName(String username);
+	
 	public User checkLogin(String username, String password);
 }

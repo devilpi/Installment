@@ -26,26 +26,26 @@
 <div class="container">
     <jsp:include page="header.inc.jsp"></jsp:include>
     <div id="register-box">
-        <form id="register-form">
+        <form id="register-form" action="${ctx}/user/register" method="post">
             <div class="form-group row">
-                <label for="inputEmail" class="col-sm-2 form-control-label">Email</label>
+                <label for="username" class="col-sm-2 form-control-label">Username</label>
                 <div class="col-sm-10 row">
                     <div class="col-sm-9">
-                        <input type="email" class="form-control" id="inputEmail" placeholder="Email" data-toggle="tooltip" title="hhhfffff" data-placement="top">
+                        <input type="text" class="form-control" id="username" name="username" placeholder="Username" data-toggle="tooltip" data-placement="top">
                     </div>
                     <div class="col-sm-3">
-                        <span class="tip">hhh</span>
+                        <span class="tip"></span>
                     </div>
                 </div>
             </div>
             <div class="form-group row">
-                <label for="inputPassword" class="col-sm-2 form-control-label">Password</label>
+                <label for="password" class="col-sm-2 form-control-label">Password</label>
                 <div class="col-sm-10 row">
                     <div class="col-sm-9">
-                        <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+                        <input type="password" class="form-control" id="password" name="password" placeholder="Password">
                     </div>
                     <div class="col-sm-3">
-                        <span class="tip">hhh</span>
+                        <span class="tip"></span>
                     </div>
                 </div>
             </div>
@@ -56,24 +56,24 @@
                         <input type="password" class="form-control" id="confirmPassword" placeholder="Password">
                     </div>
                     <div class="col-sm-3">
-                        <span class="tip">hhh</span>
+                        <span class="tip"></span>
                     </div>
                 </div>
             </div>
             <div class="form-group row">
-                <label for="inputPhone" class="col-sm-2 form-control-label">Phone</label>
+                <label for="phone" class="col-sm-2 form-control-label">Phone</label>
                 <div class="col-sm-10 row">
                     <div class="col-sm-9">
-                        <input type="password" class="form-control" id="inputPhone" placeholder="Phone">
+                        <input type="text" class="form-control" id="phone" name="phone" placeholder="Phone">
                     </div>
                     <div class="col-sm-3">
-                        <span>hhh</span>
+                        <span></span>
                     </div>
                 </div>
             </div>
             <div class="form-group row">
                 <div class="col-sm-offset-2 col-sm-10">
-                    <button type="button" class="btn btn-primary">Register</button>
+                    <button type="submit" class="btn btn-primary">Register</button>
                 </div>
             </div>
         </form>

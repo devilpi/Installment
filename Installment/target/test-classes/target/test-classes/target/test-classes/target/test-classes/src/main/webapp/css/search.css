@@ -1,0 +1,103 @@
+.searchbox {
+    background-color:white;opacity:0;-webkit-transform:scale(0.8);-ms-transform:scale(0.8);transform:scale(0.8);-webkit-transition:300ms;transition:300ms;-webkit-transform-origin:100% 0;-ms-transform-origin:100% 0;transform-origin:100% 0;z-index:0;
+}
+
+.searchbox p {
+    line-height: 30px;
+    font-size: 110%;
+}
+
+.searchbox span {
+    display: inline-block;
+    font-weight: bold;
+}
+
+.searchbox a {
+    margin-left:0;
+    display:inline;
+    color: #005aa0;
+    padding: 5px 10px;
+}
+
+.searchbox a:hover {
+    text-decoration: none;
+    color: red;
+}
+
+.searchbox {
+    visibility:visible;opacity:1;-webkit-transform:scale(1);-ms-transform:scale(1);transform:scale(1);
+}
+
+.condition {
+    Z-INDEX:10001;BACKGROUND:#fff;BORDER:#DADADA 1px solid;padding:10px;
+}
+
+.result {
+    margin-top: 30px;
+}
+
+.page {
+    margin: 20px 0px;
+}
+
+div.page table {
+    margin: auto;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+div.page p {
+    padding-top: 15px;
+    text-align: center;
+    color: saddlebrown;
+}
+
+div.page p span {
+    padding: 0 10px;
+}
+
+div.page p span input {
+    width: 40px;
+}
+
+div.page p span button {
+    border: 1px solid saddlebrown;
+    color: saddlebrown;
+    background-color: white;
+    border-radius: 4px;
+}
+
+div.page p span button:hover {
+    color: white;
+    background-color: saddlebrown;
+}
+
+div.page table tr td {
+    border-left: 1px solid black;
+}
+
+div.page table tr td:first-child {
+    border: none;
+}
+
+div.page table tr td a {
+    color: #005aa0;
+    display: inline-block;
+    width: 30px;
+    line-height: 30px;
+}
+
+div.page table tr td a:hover {
+    text-decoration: none;
+}
+
+div.page table tr td a.now {
+    color: white;
+    background-color: #005aa0;
+}

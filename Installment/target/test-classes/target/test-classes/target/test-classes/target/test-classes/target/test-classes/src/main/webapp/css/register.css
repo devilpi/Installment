@@ -1,0 +1,23 @@
+#register-box {
+            background-color: #ededed;
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+        #register-box form {
+
+        }
+        #register-form {
+            background-color: white;
+            width: 60%;
+            padding: 30px;
+            margin: 0 auto;
+            border-radius: 5px;
+        }
+        .tip {
+            text-align: right;
+        }
+        label {
+        }
+        ul {
+            list-style: none;
+        }
