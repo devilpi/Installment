@@ -1,0 +1,14 @@
+#logInInformation {
+    width: 100%;
+    background-color: #ededed;
+    border-radius: 3px;
+    border: 1px solid lightgrey;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.false {
+    color: red;
+}
+.true {
+    color: green;
+}

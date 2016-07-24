@@ -29,41 +29,22 @@
     <div class="searchbar">
         <div class="searchbox">
             <div class="condition">
-                <p class="type1">
-                    <span><a href="#">餐饮小吃:</a></span>
-                    <a href="#">火锅</a>
-                    <a href="#">韩式餐饮</a>
-                    <a href="#">烤鱼</a>
-                    <a href="#">香锅</a>
-                    <a href="#">快餐</a>
-                    <a href="#">饮品</a>
-                    <a href="#">小吃</a>
-                    <a href="#">面食</a>
+                <p class="category">
+                    <span><a href="#">品牌:</a></span>
+                    <a href="#">苹果</a>
+                    <a href="#">联想</a>
+                    <a href="#">ThinkPad</a>
+                    <a href="#">戴尔</a>
+                    <a href="#">惠普</a>
+                    <a href="#">微星</a>
                 </p>
                 <p class="type2">
-                    <span><a href="#">饰品礼品:</a></span>
-                    <a href="#">DIY礼品</a>
-                    <a href="#">工艺礼品</a>
-                    <a href="#">节庆礼品</a>
-                    <a href="#">生活超市</a>
-                </p>
-                <p class="type3">
-                    <span><a href="#">服装鞋帽:</a></span>
-                    <a href="http://www.lanrenzhijia.com">懒人之家</a>
-                    <a href="#">精品折扣</a>
-                    <a href="#">精品童装</a>
-                    <a href="#">品牌服装</a>
-                    <a href="#">女装</a>
-                    <a href="#">日韩服饰</a>
-                </p>
-                <p class="type4">
-                    <span><a href="#">家居建材:</a></span>
-                    <a href="#">家居日用</a>
-                    <a href="#">装饰装修</a>
-                    <a href="#">室内环保</a>
-                    <a href="#">特色家居</a>
-                    <a href="#">建筑贴膜</a>
-                    <a href="#">灯具灯箱</a>
+                    <span><a href="#">价格:</a></span>
+                    <a href="#">0-2499</a>
+                    <a href="#">2500-5999</a>
+                    <a href="#">6000-8999</a>
+                    <a href="#">9000-13599</a>
+                    <a href="#">13600以上</a>
                 </p>
                 <p class="sort">
                     <span><a href="#">排序方式:</a></span>

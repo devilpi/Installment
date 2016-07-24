@@ -23,15 +23,6 @@ public class UserController {
 	@Autowired
 	private IUserService userService;
 	
-	@RequestMapping(value = "/list")
-	public ModelAndView list() {
-		List<User> userList = userService.findAll();
-		ModelAndView mv = new ModelAndView();
-		mv.addObject("index2", userList);
-		mv.setViewName("index2");
-		return mv;
-	}
-	
 	@RequestMapping(value = "/login", method=RequestMethod.POST)
 	public ModelAndView login(HttpServletRequest request,
             HttpServletResponse response) {

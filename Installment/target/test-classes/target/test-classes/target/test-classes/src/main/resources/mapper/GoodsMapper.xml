@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.installment.dao.IGoodsDao">
+  <insert id="add" parameterType="Goods">
+  	insert into goods(goodID, goodname, price, description, amount, place, discount, storeID, imgFileName, chargeID) 
+  	values(#{goodID}, #{goodname}, #{price}, #{description}, #{amount}, #{place}, #{discount}, #{storeID}, #{imgFileName}, #{chargeID})
+  </insert>
+  <update id="update" parameterType="Goods">
+    update goods set goodname=#{goodname}, price=#{price}, description=#{description}, amount=#{amount}, place=#{place},
+    discount=#{discount}, storeID=#{storeID}, imgFileName=#{imgFileName}, chargeID=#{chargeID}
+  </update>
+  <delete id="delete" parameterType="Integer">
+    delete from goods where goodID = #{goodID}
+  </delete>
+  <select id="findByID" parameterType="Integer" resultType="Goods">
+    select * from goods where goodID = #{goodID}
+  </select>
+  <resultMap type="Goods" id="GoodsMap" >
+  	<id column="goodID" property="goodID" />
+  	<result column="goodname" property="goodname" />
+  	<result column="price" property="price" />
+  	<result column="description" property="description" />
+  	<result column="amount" property="amount" />
+  	<result column="place" property="place" />
+  	<result column="discount" property="discount" />
+  	<result column="storeID" property="storeID" />
+  	<result column="imgFileName" property="imgFileName" />
+  	<result column="chargeID" property="chargeID" />
+  </resultMap>
+  
+  <select id="findAll" resultMap="GoodsMap">
+    select * from goods
+  </select>
+  
+  <select id="findByName" parameterType="String" resultType="Goods">
+    select * from goods where goodname = #{goodname}
+  </select>
+</mapper>

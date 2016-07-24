@@ -1,0 +1,26 @@
+.place {
+    position: absolute;
+    top: 168px;
+    left: 245px;
+}
+
+.control {
+    position: absolute;
+    top: 530px;
+    left: 545px;
+    font-size: 110%;
+    color: red;
+}
+
+.aside {
+    position: relative;
+    height: 407px;
+    top: 0;
+    left: 833px;
+    width: 300px;
+    border: 2px solid #ff6600;
+}
+
+div.panel-head {
+    background-color: red;
+}

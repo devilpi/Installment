@@ -1,0 +1,23 @@
+footer {
+    padding-top: 1em;
+    padding-left: 0;
+    background-color: whitesmoke;
+}
+
+footer .guide-list li {
+    font-size: 120%;
+    line-height: 25px;
+    text-align: center;
+}
+
+.subtitle {
+    font-size: 130%;
+}
+
+#copyrightRow {
+    padding-bottom: 15px;
+}
+
+#copyrightRow span{
+    float: right;
+}
